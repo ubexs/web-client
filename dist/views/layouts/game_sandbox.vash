@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+    <meta name="x-lb-origin" content="@model['x-lb-origin']">
+    <title>BlocksHub</title>
+
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <script nonce="@model.nonce" src="https://cdn.babylonjs.com/ammo.js"></script>
+@*
+        <script nonce="@model.nonce" src="https://preview.babylonjs.com/nodeEditor/babylon.nodeEditor.js"></script>
+        <script nonce="@model.nonce" src="https://preview.babylonjs.com/proceduralTexturesLibrary/babylonjs.proceduralTextures.min.js"></script>
+        <script nonce="@model.nonce" src="https://preview.babylonjs.com/postProcessesLibrary/babylonjs.postProcess.min.js"></script>
+        <script nonce="@model.nonce" src="https://preview.babylonjs.com/serializers/babylonjs.serializers.min.js"></script>
+        <script nonce="@model.nonce" src="https://preview.babylonjs.com/inspector/babylon.inspector.bundle.js"></script>
+        *@
+    @*
+    <script nonce="@model.nonce" src="https://cdn.jsdelivr.net/npm/simple-crypto-js@@2.2.0/dist/SimpleCrypto.min.js"></script>
+    *@
+
+    <style>
+            html, body {
+                overflow: hidden;
+                width   : 100%;
+                height  : 100%;
+                margin  : 0;
+                padding : 0;
+            }
+        
+            #renderCanvas {
+                width   : 100%;
+                height  : 100%;
+                touch-action: none;
+            }
+        </style>
+</head>
+<body>
+    <div id="meta" data-api-base-url="@model.apiBaseUrl"></div>
+    <script nonce="@model.nonce">
+        @if (process.env.NODE_ENV === 'production') {
+            function inIframe () {
+                try {
+                    return window.self !== window.top;
+                } catch (e) {
+                    return true;
+                }
+            }
+            if (!inIframe()) {
+                window.location.href = '/play';
+            }
+        }
+    </script>
+    @html.block('content')
+    <canvas id="renderCanvas"></canvas>
+    <script nonce="@model.nonce" src="https://cdn.jsdelivr.net/npm/jquery@@3.4.1/dist/jquery.min.js" integrity="sha384-vk5WoKIaW/vJyUAd9n/wmopsmNhiy+L2Z+SBxGYnUkunIxVxAv/UtMOhba/xskxh" crossorigin="anonymous"></script>
+    <!-- Locale -->
+    @console.log(model.page)
+    <script nonce="@model.nonce" src="/js/locale/en.js?v=@model.v"></script>
+    <script nonce="@model.nonce" src="/js/request.js"></script>
+    <script nonce="@model.nonce" src="/client.js?v=@model.v"></script>
+</body>
+</html>
