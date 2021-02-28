@@ -16,12 +16,12 @@ if (process.env.NODE_ENV === 'development') {
     );
 } else {
     allowedDomains.push(
-        'https://blockshub.net/',
-        'https://www.blockshub.net/',
-        'https://www.blockshub.net',
-        'https://blockshub.net',
-        'https://play.blockshub.net',
-        'https://play.blockshub.net/',
+        'https://ubexs.com/',
+        'https://www.ubexs.com/',
+        'https://www.ubexs.com',
+        'https://ubexs.com',
+        'https://play.ubexs.com',
+        'https://play.ubexs.com/',
     );
 }
 
@@ -110,8 +110,8 @@ export enum GameGenreDescriptions {
 
 
 export enum GameGenreThumbnails {
-    'https://cdn.blockshub.net/static/genre/comedy_genre_thumbnail.png' = 5,
-    'https://cdn.blockshub.net/static/genre/Western-small.jpg' = 14,
+    'https://cdn.ubexs.com/static/genre/comedy_genre_thumbnail.png' = 5,
+    'https://cdn.ubexs.com/static/genre/Western-small.jpg' = 14,
 }
 
 export class GameThumbnail {
