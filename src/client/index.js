@@ -150,7 +150,7 @@ request('/game/'+gameId+'/join?authCode='+gameAuthCode, 'POST', JSON.stringify({
 
             // Create and tweak the background material.
             var backgroundMaterial = new BABYLON.BackgroundMaterial("backgroundMaterial", scene);
-            backgroundMaterial.reflectionTexture = new BABYLON.CubeTexture("https://cdn.blockshub.net/game/default_assets/TropicalSunnyDay", scene);
+            backgroundMaterial.reflectionTexture = new BABYLON.CubeTexture("https://cdn.ubexs.com/game/default_assets/TropicalSunnyDay", scene);
             backgroundMaterial.reflectionTexture.coordinatesMode = BABYLON.Texture.SKYBOX_MODE;
             skybox.material = backgroundMaterial;
 
@@ -219,7 +219,7 @@ request('/game/'+gameId+'/join?authCode='+gameAuthCode, 'POST', JSON.stringify({
             var skybox = BABYLON.MeshBuilder.CreateBox("skyBox", {size:1000.0}, scene);
             var skyboxMaterial = new BABYLON.StandardMaterial("skyBox", scene);
             skyboxMaterial.backFaceCulling = false;
-            skyboxMaterial.reflectionTexture = new BABYLON.CubeTexture("https://cdn.blockshub.net/game/default_assets/TropicalSunnyDay", scene);
+            skyboxMaterial.reflectionTexture = new BABYLON.CubeTexture("https://cdn.ubexs.com/game/default_assets/TropicalSunnyDay", scene);
             skyboxMaterial.reflectionTexture.coordinatesMode = BABYLON.Texture.SKYBOX_MODE;
             skyboxMaterial.diffuseColor = new BABYLON.Color3(0, 0, 0);
             skyboxMaterial.specularColor = new BABYLON.Color3(0, 0, 0);
@@ -255,8 +255,8 @@ request('/game/'+gameId+'/join?authCode='+gameAuthCode, 'POST', JSON.stringify({
             ground.checkCollisions = true;
             ground.receiveShadows = true;
             var groundMat = new BABYLON.StandardMaterial("groundMaterial", scene);
-            // groundMat.diffuseTexture = new BABYLON.Texture("https://cdn.blockshub.net/game/default_assets/Concrete.jpg", scene);
-            groundMat.diffuseTexture = new BABYLON.Texture('https://cdn.blockshub.net/game/default_assets/default_stud.png', scene);
+            // groundMat.diffuseTexture = new BABYLON.Texture("https://cdn.ubexs.com/game/default_assets/Concrete.jpg", scene);
+            groundMat.diffuseTexture = new BABYLON.Texture('https://cdn.ubexs.com/game/default_assets/default_stud.png', scene);
             groundMat.diffuseTexture.uScale = 800;
             groundMat.diffuseTexture.vScale = 800;
             groundMat.diffuseTexture.alpha = 0.5;
@@ -299,7 +299,7 @@ request('/game/'+gameId+'/join?authCode='+gameAuthCode, 'POST', JSON.stringify({
 
             function MakeCapsule(width, height, detail, readyCallback) {
 
-                BABYLON.SceneLoader.ImportMesh("", "https://cdn.blockshub.net/game/default_assets/", "Player.obj", scene, function (meshes) {
+                BABYLON.SceneLoader.ImportMesh("", "https://cdn.ubexs.com/game/default_assets/", "Player.obj", scene, function (meshes) {
                     // scene.createDefaultCameraOrLight(true, true, true);
                     // scene.createDefaultEnvironment();
                     meshes.forEach(msh => {
