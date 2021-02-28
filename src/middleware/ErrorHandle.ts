@@ -75,7 +75,7 @@ export class GlobalErrorHandler extends GlobalErrorHandlerMiddleware {
         }
 
         // default if internal error / something goes wrong in error handler
-        // return response.status(500).send(ErrorTemplate('500: Internal Server Error', 'BlocksHub seems to be experiencing some issues right now. Please try again later.')).end();
+        // return response.status(500).send(ErrorTemplate('500: Internal Server Error', 'ubexs seems to be experiencing some issues right now. Please try again later.')).end();
         return super.use(error, request, response);
     }
 }
@@ -90,6 +90,6 @@ export class NotFoundMiddleware {
         if (process.env.NODE_ENV === 'development') {
             return response.send(`<h1>HTTP 404 - Not Found</h1><p>A controller or static file could not be found for <code>${request.url}</code></p>`).end();
         }
-        return response.redirect(302, "https://www.blockshub.net");
+        return response.redirect(302, "https://www.ubexs.com");
     }
 }
