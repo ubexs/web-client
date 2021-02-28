@@ -15,7 +15,7 @@ export class GamesController extends base {
     public redirect(
         @Res() res: Res,
     ) {
-        res.redirect(302, 'https://www.blockshub.net/');
+        res.redirect(302, 'https://www.ubexs.com/');
     }
 
     @Get('/:gameId/play')
