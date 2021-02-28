@@ -30,8 +30,8 @@ export const csp = {
     'form-action': `'self'`,
     'media-src': `'none'`,
     'frame-ancestors': `'self'`,
-    'img-src': `'self' https://assets.babylonjs.com/ blob: data: https://cdn.blockshub.net/ https://hindigamerclub-game.ewr1.vultrobjects.com/ https://www.google-analytics.com/`,
-    'connect-src': `'self' ws://localhost:8080/ https://www.blockshub.net https://sentry.io/ https://ka-f.fontawesome.com/releases/v5.13.1/css/free.min.css https://assets.babylonjs.com/ ${config.baseUrl.backend} ${config.baseUrl.cdn}`,
+    'img-src': `'self' https://assets.babylonjs.com/ blob: data: https://cdn.ubexs.com/ https://www.google-analytics.com/`,
+    'connect-src': `'self' ws://localhost:8080/ https://www.ubexs.com https://sentry.io/ https://ka-f.fontawesome.com/releases/v5.13.1/css/free.min.css https://assets.babylonjs.com/ ${config.baseUrl.backend} ${config.baseUrl.cdn}`,
     'object-src': `'none'`,
     'base-uri': `'self'`,
 } as any;
