@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc && node util/build.js",
-    "start:dev": "nodemon -r --ignore --exec ts-node-dev src/index.ts"
+    "start": "nodemon -r --ignore --exec ts-node-dev src/index.ts"
   },
   "keywords": [],
   "author": "",
