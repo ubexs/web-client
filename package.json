@@ -40,7 +40,7 @@
     "@types/swagger-schema-official": "^2.0.21",
     "ammo.js": "github:kripken/ammo.js",
     "apexcharts": "^3.19.3",
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "babel-minify": "^0.5.1",
     "babelify": "^10.0.0",
     "babylonjs-gui": "^4.1.0",
