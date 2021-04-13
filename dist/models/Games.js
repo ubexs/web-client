@@ -18,10 +18,10 @@ const config_1 = require("../helpers/config");
 exports.GAME_KEY = config_1.default.encryptionKeys.game;
 const allowedDomains = [];
 if (process.env.NODE_ENV === 'development') {
-    allowedDomains.push('http://localhost/', 'http://localhost:3000/', 'http://localhost', 'http://localhost:3000');
+    allowedDomains.push('https://devsite.ubexs.com/', 'https://devsite.ubexs.com:3000/', 'https://devsite.ubexs.com', 'https://devsite.ubexs.com:3000');
 }
 else {
-    allowedDomains.push('https://blockshub.net/', 'https://www.blockshub.net/', 'https://www.blockshub.net', 'https://blockshub.net', 'https://play.blockshub.net', 'https://play.blockshub.net/');
+    allowedDomains.push('https://ubexs.com', 'https://www.ubexs.com/', 'https://www.ubexs.com', 'https://ubexs.com/', 'https://play.ubexs.com', 'https://play.ubexs.com/');
 }
 exports.scriptOptions = {
     transformObjectKeys: true,
@@ -103,8 +103,8 @@ var GameGenreDescriptions;
 })(GameGenreDescriptions = exports.GameGenreDescriptions || (exports.GameGenreDescriptions = {}));
 var GameGenreThumbnails;
 (function (GameGenreThumbnails) {
-    GameGenreThumbnails[GameGenreThumbnails["https://cdn.blockshub.net/static/genre/comedy_genre_thumbnail.png"] = 5] = "https://cdn.blockshub.net/static/genre/comedy_genre_thumbnail.png";
-    GameGenreThumbnails[GameGenreThumbnails["https://cdn.blockshub.net/static/genre/Western-small.jpg"] = 14] = "https://cdn.blockshub.net/static/genre/Western-small.jpg";
+    GameGenreThumbnails[GameGenreThumbnails["https://cdn.ubexs.com/static/genre/comedy_genre_thumbnail.png"] = 5] = "https://cdn.ubexs.com/static/genre/comedy_genre_thumbnail.png";
+    GameGenreThumbnails[GameGenreThumbnails["https://cdn.ubexs.com/static/genre/Western-small.jpg"] = 14] = "https://cdn.ubexs.com/static/genre/Western-small.jpg";
 })(GameGenreThumbnails = exports.GameGenreThumbnails || (exports.GameGenreThumbnails = {}));
 class GameThumbnail {
 }
