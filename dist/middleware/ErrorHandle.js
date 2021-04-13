@@ -105,7 +105,7 @@ let NotFoundMiddleware = class NotFoundMiddleware {
         if (process.env.NODE_ENV === 'development') {
             return response.send(`<h1>HTTP 404 - Not Found</h1><p>A controller or static file could not be found for <code>${request.url}</code></p>`).end();
         }
-        return response.redirect(302, "https://www.blockshub.net");
+        return response.redirect(302, "https://www.ubexs.com/");
     }
 };
 __decorate([
