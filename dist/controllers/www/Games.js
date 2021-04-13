@@ -22,7 +22,7 @@ const swagger_1 = require("@tsed/swagger");
 const config_1 = require("../../helpers/config");
 let GamesController = class GamesController extends base_1.default {
     redirect(res) {
-        res.redirect(302, 'https://www.blockshub.net/');
+        res.redirect(302, 'https://www.ubexs.com/');
     }
     async gamePlay(req, userData, gameId) {
         const baseService = new base_1.default({
