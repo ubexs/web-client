@@ -8,7 +8,7 @@
         @html.block('meta')
 
         <!-- Prefetch -->
-        <link rel="dns-prefetch" href="https://cdn.hindigamer.club">
+        <link rel="dns-prefetch" href="https://cdn.ubexs.com">
         <link rel="dns-prefetch" href="https://cdn.jsdelivr.net/">
         <link rel="dns-prefetch" href="https://fonts.googleapis.com/">
 
@@ -98,7 +98,7 @@
             <div class="container">
                 <h3 style="margin:0;padding:0;font-weight:600;">
                     <a class="navbar-brand" href="/" style="font-weight:600;">
-                        <span style="color:rgba(71,195,91,1);">BLOCKS </span><span style="background-color:rgba(71,195,91,1);border-radius:0.25rem;color:white;padding-left:0.25rem;padding-right:0.25rem;padding-top:0.1rem;padding-bottom:0.15rem;">HUB</span>
+                        <span style="color:rgba(71,195,91,1);">ubexs</span>
                     </a>
                 </h3>
 
@@ -275,39 +275,39 @@
             <div class="staff-sidebar">
                 <div class="card" style="height:100%;min-height: 100vh;">
                     <div class="card-body" style="height:100%;">
-                        <h3 style="font-size:1rem;">GENERAL</h3>
+                        <h3 style="font-size:1rem;">General</h3>
                         @if (model.hasPerm('ReviewPendingItems')) {
                             <a class="normal" href="/staff/catalog">
-                                <p class="staff-item">PENDING ITEMS</p>
+                                <p class="staff-item">Pending items</p>
                             </a>
                         }
                         @if (model.hasPerm('ManageBanner')) {
                             <a class="normal" href="/staff/banner">
-                                <p class="staff-item">BANNER</p>
+                                <p class="staff-item">Manage banner</p>
                             </a>
                         }
                         @if (model.hasPerm('ManageSupportTickets')) {
                             <a class="normal" href="/staff/tickets">
-                                <p class="staff-item">VIEW TICKETS</p>
+                                <p class="staff-item">View tickets</p>
                             </a>
                         }
                         @if (model.hasPerm('ManageSupportTickets')) {
                             <a class="normal" href="/staff/create">
-                                <p class="staff-item">CREATE ITEM</p>
+                                <p class="staff-item">Create item</p>
                             </a>
                         }
                         @if (model.hasPerm('ManageForumCategories')) {
                             <a class="normal" href="/staff/forums">
-                                <p class="staff-item">FORUMS</p>
+                                <p class="staff-item">Forums</p>
                             </a>
                         }
 
                         @if (model.hasPerm('ReviewAbuseReports')) {
                             <div class="seperator-staff"></div>
 
-                            <h3 style="font-size:1rem;">ABUSE REPORTS</h3>
+                            <h3 style="font-size:1rem;">Abuse reports</h3>
                             <a class="normal" href="/staff/report-abuse/user-status">
-                                <p class="staff-item">USER STATUS</p>
+                                <p class="staff-item">User status</p>
                             </a>
                         }
 
@@ -316,41 +316,41 @@
                         <h3 style="font-size:1rem;">USER</h3>
                         @if (model.hasPerm('ManagePublicUserInfo')) {
                             <a class="normal" href="/staff/user/search">
-                                <p class="staff-item">SEARCH</p>
+                                <p class="staff-item">Search</p>
                             </a>
                         }
                         @if (model.hasPerm('BanUser')) {
                             <a class="normal" href="/staff/ban">
-                                <p class="staff-item">BAN</p>
+                                <p class="staff-item">Ban</p>
                             </a>
                         }
                         @if (model.hasPerm('UnbanUser')) {
                             <a class="normal" href="/staff/unban">
-                                <p class="staff-item">UNBAN</p>
+                                <p class="staff-item">Unban</p>
                             </a>
                         }
                         @if (model.hasPerm('ResetPassword')) {
                             <a class="normal" href="/staff/password">
-                                <p class="staff-item">RESET PASSWORD</p>
+                                <p class="staff-item">Reset password</p>
                             </a>
                         }
                         @if (model.hasPerm('GiveItemToUser')) {
                             <a class="normal" href="/staff/give">
-                                <p class="staff-item">GIVE ITEM</p>
+                                <p class="staff-item">Give items</p>
                             </a>
                         }
                         @if (model.hasPerm('GiveCurrencyToUser')) {
                             <a class="normal" href="/staff/give/currency">
-                                <p class="staff-item">GIVE CURRENCY</p>
+                                <p class="staff-item">Give currency</p>
                             </a>
                         }
 
                         @if (model.hasPerm('ManageCurrencyProducts')) {
                             <div class="seperator-staff"></div>
 
-                            <h3 style="font-size:1rem;">ECONOMY</h3>
+                            <h3 style="font-size:1rem;">Economy</h3>
                             <a class="normal" href="/staff/currency-product">
-                                <p class="staff-item">CURRENCY PRODUCTS</p>
+                                <p class="staff-item">Currency products</p>
                             </a>
                         }
 
@@ -390,12 +390,12 @@
                     <div class="col-12" style="padding: 3rem 0 0 0;">
                         <div class="row" style="padding-bottom:1rem;">
                             <div class="col-12">
-                                <h2 style="">BlocksHub</h2>
+                                <h2 style="">ubexs</h2>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-6 col-md-4 footerBarListItems">
-                                <h5>COMPANY</h5>
+                                <h5>Company</h5>
                                 <p style="font-size:0.85rem;"><a href="/play">Play</a></p>
                                 <p style="font-size:0.85rem;"><a href="/forum/9?page=1">Blog</a></p>
                                 <p style="font-size:0.85rem;"><a href="/staff">Staff</a></p>
@@ -403,7 +403,7 @@
                                 <p style="font-size:0.85rem;"><a href="/terms#privacypolicy">Privacy Policy</a></p>
                             </div>
                             <div class="col-6 col-md-4 footerBarListItems">
-                                <h5>SUPPORT</h5>
+                                <h5>Support</h5>
                                 <p style="font-size:0.85rem;"><a href="/support">Contact Us</a></p>
                                 <p style="font-size:0.85rem;"><a href="/support/refund-policy">Refund Policy</a></p>
                                 <p style="font-size:0.85rem;"><a href="/support/game-help">Game Help</a></p>
