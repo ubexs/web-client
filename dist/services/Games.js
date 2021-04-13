@@ -38,10 +38,10 @@ class Games extends base_1.default {
     setupGameClient() {
         const GAME_KEY = model.Games.GAME_KEY;
         const COPYRIGHT_DISCLAIMER = `/**
- * Copyright (c) BlocksHub - All Rights Reserved
+ * Copyright (c) ubexs - All Rights Reserved
  * Unauthorized copying of this file, via any medium, is strictly prohibited.
  * You are not allowed to copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software.
- * View our full terms of service here: https://blockshub.net/terms
+ * View our full terms of service here: https://www.ubexs.com/terms
  */`;
         let dest = this.path.join(__dirname, '../public/client.js');
         let tmpDir = this.path.join(__dirname, './client.tmp.js');
