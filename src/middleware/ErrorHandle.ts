@@ -49,6 +49,8 @@ export class GlobalErrorHandler extends GlobalErrorHandlerMiddleware {
                 error.name = 'UNAUTHORIZED';
             }else if (error.response.status === 403) {
                 error.name = 'FORBIDDEN';
+            }else if (error.response.status === 451) {
+                error.name = 'LEGAL';
             }
         }
         try {
@@ -64,6 +66,8 @@ export class GlobalErrorHandler extends GlobalErrorHandlerMiddleware {
                 return response.status(401).send(ErrorTemplate('401: Unauthorized', 'Unauthorized. Please go back and try again.')).end();
             } else if (error.name === 'FORBIDDEN') {
                 return response.status(401).send(ErrorTemplate('403: Forbidden', 'Forbidden. Please go back and try again.')).end();
+            } else if (error.name === 'LEGAL') {
+                return response.status(451).send(ErrorTemplate('451: Unavailable For Legal Reasons', 'Legal. Please go back and try again.')).end();
             }else{
                 throw error;
             }
@@ -75,7 +79,7 @@ export class GlobalErrorHandler extends GlobalErrorHandlerMiddleware {
         }
 
         // default if internal error / something goes wrong in error handler
-        // return response.status(500).send(ErrorTemplate('500: Internal Server Error', 'ubexs seems to be experiencing some issues right now. Please try again later.')).end();
+        // return response.status(500).send(ErrorTemplate('500: Internal Server Error', 'Ubexs seems to be experiencing some issues right now. Please try again later.')).end();
         return super.use(error, request, response);
     }
 }
