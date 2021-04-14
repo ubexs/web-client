@@ -73,7 +73,7 @@ export default class Games extends base {
         const GAME_KEY = model.Games.GAME_KEY;
 
         const COPYRIGHT_DISCLAIMER = `/**
- * Copyright (c) ubexs - All Rights Reserved
+ * Copyright (c) ubexs.com - All Rights Reserved
  * Unauthorized copying of this file, via any medium, is strictly prohibited.
  * You are not allowed to copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software.
  * View our full terms of service here: https://www.ubexs.com/terms
