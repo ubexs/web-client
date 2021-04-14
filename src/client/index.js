@@ -60,11 +60,11 @@ require('babylonjs-loaders');
             }));
         }
         sock.onclose = function (event) {
-            alert('Connection to the Game Server has been lost.');
+            alert('Your connection to the game server has been lost.');
             window.location.reload();
         }
         sock.onerror = function (event) {
-            alert('Connection to the Game Server has been lost.');
+            alert('Your connection to the game server has been lost.');
             window.location.reload();
         }
         window.onbeforeunload = function () {
