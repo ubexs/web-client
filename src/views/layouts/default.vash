@@ -31,7 +31,7 @@
         <!-- Font Awesome -->
         <script nonce="@model.nonce" src="https://kit.fontawesome.com/983cb40861.js"></script>
         <!-- Title -->
-        <title>@model.title - ubexs</title>
+        <title>@model.title - ubexs.com</title>
         <!-- SEO -->
         @model.seo
         @html.block('seo')
@@ -278,36 +278,36 @@
                         <h3 style="font-size:1rem;">GENERAL</h3>
                         @if (model.hasPerm('ReviewPendingItems')) {
                             <a class="normal" href="/staff/catalog">
-                                <p class="staff-item">PENDING ITEMS</p>
+                                <p class="staff-item">Pending items</p>
                             </a>
                         }
                         @if (model.hasPerm('ManageBanner')) {
                             <a class="normal" href="/staff/banner">
-                                <p class="staff-item">BANNER</p>
+                                <p class="staff-item">Banner</p>
                             </a>
                         }
                         @if (model.hasPerm('ManageSupportTickets')) {
                             <a class="normal" href="/staff/tickets">
-                                <p class="staff-item">VIEW TICKETS</p>
+                                <p class="staff-item">View tickets</p>
                             </a>
                         }
                         @if (model.hasPerm('ManageSupportTickets')) {
                             <a class="normal" href="/staff/create">
-                                <p class="staff-item">CREATE ITEM</p>
+                                <p class="staff-item">Create items</p>
                             </a>
                         }
                         @if (model.hasPerm('ManageForumCategories')) {
                             <a class="normal" href="/staff/forums">
-                                <p class="staff-item">FORUMS</p>
+                                <p class="staff-item">Forums</p>
                             </a>
                         }
 
                         @if (model.hasPerm('ReviewAbuseReports')) {
                             <div class="seperator-staff"></div>
 
-                            <h3 style="font-size:1rem;">ABUSE REPORTS</h3>
+                            <h3 style="font-size:1rem;">Abuse reports</h3>
                             <a class="normal" href="/staff/report-abuse/user-status">
-                                <p class="staff-item">USER STATUS</p>
+                                <p class="staff-item">User status</p>
                             </a>
                         }
 
@@ -316,41 +316,41 @@
                         <h3 style="font-size:1rem;">USER</h3>
                         @if (model.hasPerm('ManagePublicUserInfo')) {
                             <a class="normal" href="/staff/user/search">
-                                <p class="staff-item">SEARCH</p>
+                                <p class="staff-item">Search</p>
                             </a>
                         }
                         @if (model.hasPerm('BanUser')) {
                             <a class="normal" href="/staff/ban">
-                                <p class="staff-item">BAN</p>
+                                <p class="staff-item">Ban</p>
                             </a>
                         }
                         @if (model.hasPerm('UnbanUser')) {
                             <a class="normal" href="/staff/unban">
-                                <p class="staff-item">UNBAN</p>
+                                <p class="staff-item">Unban</p>
                             </a>
                         }
                         @if (model.hasPerm('ResetPassword')) {
                             <a class="normal" href="/staff/password">
-                                <p class="staff-item">RESET PASSWORD</p>
+                                <p class="staff-item">Reset password</p>
                             </a>
                         }
                         @if (model.hasPerm('GiveItemToUser')) {
                             <a class="normal" href="/staff/give">
-                                <p class="staff-item">GIVE ITEM</p>
+                                <p class="staff-item">Give item</p>
                             </a>
                         }
                         @if (model.hasPerm('GiveCurrencyToUser')) {
                             <a class="normal" href="/staff/give/currency">
-                                <p class="staff-item">GIVE CURRENCY</p>
+                                <p class="staff-item">Give currency</p>
                             </a>
                         }
 
                         @if (model.hasPerm('ManageCurrencyProducts')) {
                             <div class="seperator-staff"></div>
 
-                            <h3 style="font-size:1rem;">ECONOMY</h3>
+                            <h3 style="font-size:1rem;">Economy</h3>
                             <a class="normal" href="/staff/currency-product">
-                                <p class="staff-item">CURRENCY PRODUCTS</p>
+                                <p class="staff-item">Currency products</p>
                             </a>
                         }
 
@@ -395,21 +395,23 @@
                         </div>
                         <div class="row">
                             <div class="col-6 col-md-4 footerBarListItems">
-                                <h5>COMPANY</h5>
+                                <h5>Company</h5>
                                 <p style="font-size:0.85rem;"><a href="/play">Play</a></p>
                                 <p style="font-size:0.85rem;"><a href="/forum/9?page=1">Blog</a></p>
                                 <p style="font-size:0.85rem;"><a href="/staff">Staff</a></p>
                                 <p style="font-size:0.85rem;"><a href="/terms">Terms of Service</a></p>
-                                <p style="font-size:0.85rem;"><a href="/terms#privacypolicy">Privacy Policy</a></p>
+                                <p style="font-size:0.85rem;"><a href="/privacy">Privacy Policy</a></p>
                             </div>
                             <div class="col-6 col-md-4 footerBarListItems">
-                                <h5>SUPPORT</h5>
+                                <h5>Support</h5>
                                 <p style="font-size:0.85rem;"><a href="/support">Contact Us</a></p>
                                 <p style="font-size:0.85rem;"><a href="/support/refund-policy">Refund Policy</a></p>
+                                <p style="font-size:0.85rem;"><a href="/support/signup-help">Signup Help</a></p>
                                 <p style="font-size:0.85rem;"><a href="/support/game-help">Game Help</a></p>
                                 <p style="font-size:0.85rem;"><a href="/support/account-hacked">Account Hacked</a></p>
                                 <p style="font-size:0.85rem;"><a href="/support/scammed">I was scammed</a></p>
                                 <p style="font-size:0.85rem;"><a href="/support/account-banned-help">Why was my account banned?</a></p>
+                                <p style="font-size:0.85rem;"><a href="/support/explore-other-sandbox-websites">Explore other sandbox websites.</a></p>
                             </div>
                             <div class="col-12 col-md-4 footerBarListItems">
                                 <p>
