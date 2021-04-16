@@ -3,7 +3,7 @@
 
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-        <title>Babylon Template</title>
+        <title>Studio</title>
 
         <style>
             html, body {
@@ -21,15 +21,15 @@
             }
         </style>
 
-        <script src="https://preview.babylonjs.com/babylon.js"></script>
-        <script src="https://preview.babylonjs.com/loaders/babylonjs.loaders.min.js"></script>
-        <script src="https://code.jquery.com/pep/0.4.3/pep.js"></script>
+        <script src="/js/game/babylon.js"></script>
+        <script src="/js/game/babylonjs.loaders.js"></script>
+        <script src="/js/jquery/pep/0.4.3/pep.js"></script>
     </head>
 
    <body>
 
     <canvas id="renderCanvas" touch-action="none"></canvas> //touch-action="none" for best results from PEP
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="/js/jquery/3.4.1/jquery.min.js"></script>
     <script src="/js/pages/studio.js"></script>
 
    </body>
