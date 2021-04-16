@@ -1,10 +1,8 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
-
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
         <title>Studio</title>
-
         <style>
             html, body {
                 overflow: hidden;
@@ -20,18 +18,13 @@
                 touch-action: none;
             }
         </style>
-
         <script src="/js/game/babylon.js"></script>
         <script src="/js/game/babylonjs.loaders.js"></script>
-        <script src="/js/jquery/pep/0.4.3/pep.js"></script>
+        <script src="/js/game/pep.js"></script>
     </head>
-
    <body>
-
     <canvas id="renderCanvas" touch-action="none"></canvas> //touch-action="none" for best results from PEP
-    <script src="/js/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="/js/pages/studio.js"></script>
-
    </body>
-
 </html>
