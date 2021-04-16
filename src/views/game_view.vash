@@ -43,7 +43,7 @@
                                     </div>
                                 </div>
                                 @if (model.userInfo && model.page.gameInfo.creatorId === model.userInfo.userId && model.page.gameInfo.creatorType === 0) {
-                                    <a href="/@model.page.gameInfo.gameId/edit" role="button" style="width:100%;cursor: pointer;margin-top:1rem;font-size:0.85rem;margin-top:1rem;" class="btn btn-outline-success">EDIT</a>
+                                    <a href="/@model.page.gameInfo.gameId/edit" role="button" style="width:100%;cursor: pointer;margin-top:1rem;font-size:0.85rem;margin-top:1rem;" class="btn btn-outline-success">Edit</a>
                                 }
                                 <a href="/@model.page.gameInfo.gameId/play" role="button" style="width:100%;color:white;cursor: pointer;margin-top:1rem;" class="btn btn-success"><i class="fas fa-play"></i></a>
                             </div>
