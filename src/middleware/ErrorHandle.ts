@@ -65,7 +65,7 @@ export class GlobalErrorHandler extends GlobalErrorHandlerMiddleware {
             } else if (error.name === 'UNAUTHORIZED') {
                 return response.status(401).send(ErrorTemplate('401: Unauthorized', 'Unauthorized. Please go back and try again.')).end();
             } else if (error.name === 'FORBIDDEN') {
-                return response.status(401).send(ErrorTemplate('403: Forbidden', 'Forbidden. Please go back and try again.')).end();
+                return response.status(403).send(ErrorTemplate('403: Forbidden', 'Forbidden. Please go back and try again.')).end();
             } else if (error.name === 'LEGAL') {
                 return response.status(451).send(ErrorTemplate('451: Unavailable For Legal Reasons', 'Legal. Please go back and try again.')).end();
             }else{
